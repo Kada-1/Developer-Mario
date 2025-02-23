@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المطور ماريوا</title>
+    <link rel="icon" type="file:///C:/Users/pc/Downloads/Untitled%20design%20(5).png" href="file:///C:/Users/pc/Downloads/Untitled%20design%20(5).png">
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<style>
+/* ✅ إعدادات عامة */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* ✅ شريط التنقل */
+.navbar {
+    background-color: #6cd36c;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: #2d6a2d;
+    color: #fff;
+}
+
+/* ✅ المسافات بين الأقسام */
+.section {
+    padding: 150px 20px;
+}
+
+/* ✅ ضبط العنوان ليكون بعيدًا عن شريط التنقل */
+#about {
+    padding-top: 180px;
+}
+
+/* ✅ تأثير الكتابة */
+#typing-text {
+    font-size: 2.5rem;
+    color: #2d6a2d;
+    font-weight: bold;
+    border-right: 3px solid #2d6a2d;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+/* ✅ جعل بطاقات الأعمال أفقية */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* ✅ تحسين تصميم البطاقة */
+.card {
+    background-color: #6cd36c;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    background-color: #2d6a2d;
+    transform: scale(1.05);
+}
+
+/* ✅ جعل الصورة بحجم مناسب داخل البطاقة */
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* ✅ تحسين تصميم التواصل */
+.contact-box {
+    background-color: white;
+    padding: 20px;
+    width: 60%;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.contact-box p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.discord-btn, .social-btn {
+    display: inline-block;
+    background-color: #7289da;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+}
+
+.social-btn {
+    background-color: #1da1f2;
+}
+
+.discord-btn:hover, .social-btn:hover {
+    opacity: 0.8;
+}
+
+</style>
+
+</head>
+<body>
+
+    <!-- ✅ شريط التنقل -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">تعريف</a></li>
+            <li><a href="#projects">أعمال</a></li>
+            <li><a href="#contact">تواصل</a></li>
+        </ul>
+    </nav>
+
+    <!-- ✅ قسم التعريف -->
+    <section id="about" class="section">
+        <h1 id="typing-text">المطور ماريوا</h1>
+        <p>أنا مطور ويب شغوف، متخصص في تصميم وتطوير مواقع احترافية بأفكار إبداعية تركز على تجربة المستخدم. لدي خبرة في تحويل الأفكار إلى مشاريع رقمية مذهلة باستخدام أحدث التقنيات.</p>
+    </section>
+
+    <!-- ✅ قسم الأعمال -->
+    <section id="projects" class="section">
+        <h2>أعمالي</h2>
+        <div class="projects-container">
+            <div class="card" onclick="openImage('https://cdn.discordapp.com/attachments/1338226938661044276/1338267799969206283/image.png?ex=67aa7683&is=67a92503&hm=1219c42528ee4678d05b949c1c99b2998b15f1870289046005378f4216b80136&')">
+                <p>مشروع 1</p>
+                <img src="https://cdn.discordapp.com/attachments/1338226938661044276/1338267799969206283/image.png?ex=67aa7683&is=67a92503&hm=1219c42528ee4678d05b949c1c99b2998b15f1870289046005378f4216b80136&" alt="مشروع 1">
+            </div>
+            <div class="card" onclick="openImage('https://cdn.discordapp.com/attachments/1338226938661044276/1338228943836414132/image.png?ex=67aa5253&is=67a900d3&hm=51ee86fcbc899c94e3c3ceba4a2d4259dad5ece68a743e0ff91107fbdb347e16&')">
+                <p>مشروع 2</p>
+                <img src="https://cdn.discordapp.com/attachments/1338226938661044276/1338228943836414132/image.png?ex=67aa5253&is=67a900d3&hm=51ee86fcbc899c94e3c3ceba4a2d4259dad5ece68a743e0ff91107fbdb347e16&" alt="مشروع 2">
+            </div>
+            <div class="card" onclick="openImage('https://cdn.discordapp.com/attachments/1335259894512619603/1338240474061869236/image.png?ex=67aa5d10&is=67a90b90&hm=97467c78dc9ca545cb93c5ccb709b3d088a58d4efafe69912c888789bc209bba&')">
+                <p>مشروع 3</p>
+                <img src="https://cdn.discordapp.com/attachments/1335259894512619603/1338240474061869236/image.png?ex=67aa5d10&is=67a90b90&hm=97467c78dc9ca545cb93c5ccb709b3d088a58d4efafe69912c888789bc209bba&" alt="مشروع 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ قسم التواصل -->
+    <section id="contact" class="section">
+        <h2>تواصل معي</h2>
+        <div class="contact-box">
+            <p>📩 يمكنك التواصل معي عبر:</p>
+            <button class="discord-btn" onclick="copyDiscord()">نسخ اسم الديسكورد <i class="fab fa-discord"></i></button>
+            <a href="https://discord.com/channels/@me/1292149917111943209" target="_blank" class="social-btn">الديسكورد<i class="fab fa-twitter"></i></a>
+        </div>
+    </section>
+<script>
+// ✅ تأثير الكتابة لكلمة "المطور ماريوا" بسرعة ثابتة
+const text = "المطور ماريوا ...";
+let index = 0;
+let isDeleting = false;
+const speed = 100;
+
+function typeEffect() {
+    const title = document.getElementById("typing-text");
+
+    if (!isDeleting) {
+        title.textContent = text.substring(0, index++);
+    } else {
+        title.textContent = text.substring(0, index--);
+    }
+
+    if (index === text.length) {
+        isDeleting = true;
+        setTimeout(typeEffect, 1000);
+    } else if (index === 0) {
+        isDeleting = false;
+        setTimeout(typeEffect, 500);
+    } else {
+        setTimeout(typeEffect, speed);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", typeEffect);
+
+// ✅ نسخ اسم الديسكورد عند الضغط
+function copyDiscord() {
+    navigator.clipboard.writeText("3_1.4");
+    alert("تم نسخ اسم الديسكورد!");
+}
+
+</script>
+</body>
+</html>
